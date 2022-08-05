@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title{
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  flex-flow: row;
+  letter-spacing: 2.5px;
+}
+
+.title div:nth-child(1){
+  color:rgb(98, 195, 227);
+  margin-right: 5px;
+}
+
+.title div:nth-child(2){
+  margin-top: 15px;
+  font-size:45px
+}
+
+.title div:nth-child(3){
+  color: red;
+  margin-left: 5px;
+}
+
+.scores{
+  display: flex;
+  font-size: 40px;
+}
+
+.xScoreTitle{
+  color: red;
+}
+
+.oScoreTitle{
+  color:rgb(98, 195, 227);
+}
+
+.score-section{
+  display: flex;
+  transition: border-color ease-in-out 0.3s;
+  border-bottom: 5px solid rgba(0, 0, 0, 0);
+
+}
+
+.x-underline{
+  border-color: rgb(98, 195, 227);
+}
+
+.o-underline{
+  border-color: red;
+}
+
+table{
+  border-spacing: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+table td{
+  border: 1px solid gray;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+table tr:nth-child(1) td:nth-child(1){
+  border-top-left-radius: 25px;
+}
+
+table tr:nth-child(1) td:nth-child(3){
+  border-top-right-radius: 25px;
+}
+
+table tr:nth-child(3) td:nth-child(1){
+  border-bottom-left-radius: 25px;
+}
+
+table tr:nth-child(3) td:nth-child(3){
+  border-bottom-right-radius: 25px;
+}
+
+.x-colour{
+  color:red;
+}
+
+.o-colour{
+  color:rgb(98, 195, 227);
+}
+
+.hidden{
+  width:0;
+  height: 0;
+  opacity: 0;
+}
+
+.win-state{
+  margin-bottom: 20px;
+}
+
+.win-state:not(.hidden)
+{
+  transition: opacity ease-in-out 0.5s;
+}
+
+.win-state .win-msg{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.reset,
+.win-state .win-restart{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: rgb(98, 195, 227);
+  padding: 5px;
+  transition: all ease-in-out 0.2s;
+}
+
+.reset:hover,
+.win-state .win-restart:hover{
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  background-color: lightgray;
+}
+
+.reset{
+  color: red;
+}
