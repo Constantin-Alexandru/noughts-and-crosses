@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+  --noughts-colour: rgb(98, 195, 227);
+  --crosses-colour: red;
+}
+
 .container{
   display: flex;
   flex-direction: column;
@@ -18,7 +23,7 @@
 }
 
 .title div:nth-child(1){
-  color:rgb(98, 195, 227);
+  color: var(--noughts-colour);
   margin-right: 5px;
 }
 
@@ -28,8 +33,15 @@
 }
 
 .title div:nth-child(3){
-  color: red;
+  color: var(--crosses-colour);
   margin-left: 5px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -50px;
+  margin-left: 450px;
 }
 
 .scores{
@@ -38,11 +50,11 @@
 }
 
 .xScoreTitle{
-  color: red;
+  color: var(--crosses-colour);
 }
 
 .oScoreTitle{
-  color:rgb(98, 195, 227);
+  color:var(--noughts-colour);
 }
 
 .score-section{
@@ -53,11 +65,11 @@
 }
 
 .x-underline{
-  border-color: rgb(98, 195, 227);
+  border-color: var(--noughts-colour);
 }
 
 .o-underline{
-  border-color: red;
+  border-color: var(--crosses-colour)red;
 }
 
 table{
@@ -91,7 +103,7 @@ table tr:nth-child(3) td:nth-child(3){
 }
 
 .x-colour{
-  color:red;
+  color:var(--crosses-colour);
 }
 
 .o-colour{
@@ -140,5 +152,5 @@ table tr:nth-child(3) td:nth-child(3){
 }
 
 .reset{
-  color: red;
+  color: var(--crosses-colour);
 }

@@ -106,6 +106,10 @@ const App = () => {
         <div>AND</div>
         <div>CROSSES</div>
       </h1>
+      
+      <h2 className="subtitle">
+        by Alex Constantin
+      </h2>
 
       <div className="scores">
         <div
